@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/css">
-</head>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('新規作成')}"></head>
+
 <body>
     <h1>NEW BLOG</h1>
 
-    <input type="text" id="blog" name="blog"><br>
-     <a href="/blogs">戻る</a>
-    <button type="submit">作成</button><br>
+    <header th:replace="~{fragments/layout :: header}"></header>
+    
+    <div class="newPost">
+        <form action="/new" method="post">
+            <label for="title">タイトル：</label>
+            <input type="text" id="title" name="title" placeholder="タイトルを入力">
+
+            <label for="contens">本文：</label>
+            <!-- <input type="text" id="contens" name="contents" placeholder="本文を入力"> -->
+             <textarea id="contens" name="contens" placeholder="本文を入力" rows="10"></textarea>
+            
+             <button class="newButton" type="submit">作成</button>
+        </form>
+
+        
+        
+        <a href="/blogs">戻る</a>
+
+        
+    </div>
+    
 
    
 </body>

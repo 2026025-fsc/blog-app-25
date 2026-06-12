@@ -1,0 +1,160 @@
+body{
+    color: #505050;
+    
+}
+
+h1{
+    font-size: 48px;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 
+     2px  0px 0 #545050,
+    -2px  0px 0 #545050,
+     0px  2px 0 #545050,
+     0px -2px 0 #545050;
+    background-color: #dbedfc;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header{
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    background-color: #81818110;
+    color: #545454;
+}
+
+#nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+#nav li a{
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+    
+}
+
+a{
+    color: rgba(24, 25, 25, 0.778);
+}
+
+.post form{
+    display: flex;      
+    gap: 8px;           
+    width: 100%;        
+    max-width: 400px;
+    align-items: center;
+}
+
+.post form input[type="text"]{
+    flex: 1;
+    min-width: 0;
+    padding: 6px 10px;
+}
+
+.post form button {
+    flex-shrink: 0;      /* ボタンが横に潰れない */
+    white-space: nowrap; /* ボタンの中の文字が縦に改行されない */
+    padding: 6px 12px; 
+    font-size: 14px; 
+}
+
+.delete {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;               
+}
+
+.delete form button{
+    flex-shrink: 0;      
+    white-space: nowrap; 
+    padding: 6px 12px; 
+    font-size: 12px; 
+}
+
+.newPost{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea:focus{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    background-color: #bfcef3;
+    color: rgb(251, 248, 250);
+    padding: 10px 20px;
+    border: 1px solid #abaaaa;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.newButton{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #5d76bf;
+}
+
+button:active {
+    background-color: #313486;
+    transform: scale(0.98);
+}
+
+.aa{
+    display: grid;
+    place-items: center;
+    min-height: 500px;
+}
+
+.detail {
+    width: 80%;
+    max-width: 500px;
+}
+
+.title{
+    font-weight: bold;     
+  font-size: 1.25rem;    
+  margin-bottom: 10px;
+}
