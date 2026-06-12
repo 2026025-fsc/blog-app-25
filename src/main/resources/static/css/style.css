@@ -25,6 +25,10 @@ header{
     color: #545454;
 }
 
+.navi a:hover {
+    background-color: #ddf1ff;
+}
+
 #nav{
     list-style: none;
     margin: 0;
@@ -138,7 +142,7 @@ button:hover {
 }
 
 button:active {
-    background-color: #313486;
+    background-color: #6163b1;
     transform: scale(0.98);
 }
 
